@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/portfolio.css" rel="stylesheet" />
+    <script src="sidebar.js" defer></script>
+    <title>Portfolio - Erik Graybill</title>
+</head>
+<body>
+    <div class="header">
+        <img style="width: 150px; height: 100%" src="images/EG-Logo-Full-DM.svg">
+        <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar">
+            <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+        <nav id="navbar">
+            <ul>
+                <li>
+                    <button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">
+                        <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </li>
+                <li><a href="index.html" class="active-link" aria-current="page">Portfolio</a></li>
+                <!--<li><a href="">Services</a></li>-->
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+    </div>
+
+    <div class="portfolio-info">
+        <h1>Portfolio</h1>
+        <p>Select a gallery to see some of my work!</p>
+    </div>
+
+    <div class="portfolio">
+        <div class="portfolio-item">
+            <a href="nature-gallery.html">
+                <img src="images/nature/_banner.jpg">
+                <span class="portfolio-text">NATURE</span>
+            </a>
+        </div>
+        <div class="portfolio-item">
+            <a href="travel-gallery.html">
+                <img src="images/travel/_banner.jpg">
+                <span class="portfolio-text">TRAVEL</span>
+            </a>
+        </div>
+        <div class="portfolio-item">
+            <a href="events-gallery.html">
+                <img src="images/events/_banner.jpg">
+                <span class="portfolio-text">EVENTS</span>
+            </a>
+        </div>
+        <div class="portfolio-item">
+            <a href="birds-gallery.html">
+                <img src="images/birds/_banner.JPG">
+                <span class="portfolio-text">BIRDS</span> 
+            </a>
+        </div>
+    </div>
+</body>
+</html>

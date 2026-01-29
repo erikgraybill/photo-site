@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <link href="css/gallery.css" rel="stylesheet" />
+    <script src="lightbox-plus-jquery.js" defer></script>
+    <script src="sidebar.js" defer></script>
+    <title>Nature Gallery - Erik Graybill</title>
+</head>
+<body>
+    <div class="header">
+        <img style="width: 150px; height: 100%" src="images/EG-Logo-Full-DM.svg">
+        <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar">
+            <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+        <nav id="navbar">
+            <ul>
+                <li>
+                    <button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">
+                        <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </li>
+                <li><a href="index.html" class="active-link" aria-current="page">Portfolio</a></li>
+                <!--<li><a href="">Services</a></li>-->
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+    </div>
+
+    <div class="gallery-info">
+        <h1>Nature Gallery</h1>
+        <p>A gallery of nature photos, taken on trails and trips into the wild.</p>
+    </div>
+
+    <div class="gallery">
+        <a href="images/nature/waterfall-1.jpg" data-lightbox="gallery"><img src="images/nature/waterfall-1.jpg"></a>
+        <a href="images/nature/carin.jpg" data-lightbox="gallery"><img src="images/nature/carin.jpg"></a>
+        <a href="images/nature/magnolia.jpg" data-lightbox="gallery"><img src="images/nature/magnolia.jpg"></a>
+        <a href="images/nature/waterfall-2.jpg" data-lightbox="gallery"><img src="images/nature/waterfall-2.jpg"></a>
+        <a href="images/nature/twilit-trail.jpg" data-lightbox="gallery"><img src="images/nature/twilit-trail.jpg"></a>
+        <a href="images/nature/blood-moon.jpg" data-lightbox="gallery"><img src="images/nature/blood-moon.jpg"></a>
+        <a href="images/nature/waterfall-3.JPG" data-lightbox="gallery"><img src="images/nature/waterfall-3.jpg"></a>
+        <a href="images/nature/aurora.jpg" data-lightbox="gallery"><img src="images/nature/aurora.jpg"></a>
+    </div>
+    
+</body>
+</html>

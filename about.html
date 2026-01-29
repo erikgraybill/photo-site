@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/about.css" rel="stylesheet" />
+    <script src="sidebar.js" defer></script>
+    <title>About Me - Erik Graybill</title>
+</head>
+<body>
+    <div class="header">
+        <img style="width: 150px; height: 100%" src="images/EG-Logo-Full-DM.svg">
+        <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar">
+            <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+        <nav id="navbar">
+            <ul>
+                <li>
+                    <button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">
+                        <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </li>
+                <li><a href="index.html">Portfolio</a></li>
+                <!--<li><a href="">Services</a></li>-->
+                <li><a href="about.html" class="active-link" aria-current="page">About</a></li>
+            </ul>
+        </nav>
+        <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+    </div>
+
+   <div class="side-by-side">
+        <div>
+            <img class="headshot" src="images/Erik-headshot.png" alt="erik-graybill-headshot">
+            <div>
+                <img class="signature" src="images/signature.png">
+                <div class="image-and-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#c3c3c3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="10" r="3"/>
+                        <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z"/>
+                    </svg>
+                    <h2>Lancaster, PA</h2>
+                </div>
+                <div class="image-and-text socials">
+                    <a href="https://www.erikgraybill.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 529.16667 529.16667" fill="#49613f">
+                            <path style="fill:#49613f;stroke-width:0.264583;fill-opacity:1" d="M 265.10992 6.9158569 A 258.19403 258.19403 0 0 0 6.9158569 265.10992 A 258.19403 258.19403 0 0 0 265.10992 523.30398 A 258.19403 258.19403 0 0 0 523.30398 265.10992 A 258.19403 258.19403 0 0 0 522.41617 243.71432 L 515.09311 243.71432 L 479.50251 243.71432 L 346.01661 243.71432 L 346.01661 285.45234 L 479.50251 285.45234 A 215.93015 215.93015 0 0 1 264.58333 480.51331 A 215.93015 215.93015 0 0 1 48.653361 264.58333 A 215.93015 215.93015 0 0 1 264.58333 48.653361 A 215.93015 215.93015 0 0 1 463.00946 179.41902 L 508.66921 179.41902 A 258.19403 258.19403 0 0 0 265.10992 6.9158569 z M 135.20208 137.681 L 135.20208 395.38362 L 366.21796 395.38362 L 366.21796 353.6456 L 176.9401 353.6456 L 176.9401 285.45234 L 304.27858 285.45234 L 304.27858 243.71432 L 176.9401 243.71432 L 176.9401 179.41902 L 366.21796 179.41902 L 366.21796 137.681 L 135.20208 137.681 z " />
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/egphotography/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="#49613f">
+                            <path d="M16.98 0a6.9 6.9 0 0 1 5.08 1.98A6.94 6.94 0 0 1 24 7.02v9.96c0 2.08-.68 3.87-1.98 5.13A7.14 7.14 0 0 1 16.94 24H7.06a7.06 7.06 0 0 1-5.03-1.89A6.96 6.96 0 0 1 0 16.94V7.02C0 2.8 2.8 0 7.02 0h9.96zm.05 2.23H7.06c-1.45 0-2.7.43-3.53 1.25a4.82 4.82 0 0 0-1.3 3.54v9.92c0 1.5.43 2.7 1.3 3.58a5 5 0 0 0 3.53 1.25h9.88a5 5 0 0 0 3.53-1.25 4.73 4.73 0 0 0 1.4-3.54V7.02a5 5 0 0 0-1.3-3.49 4.82 4.82 0 0 0-3.54-1.3zM12 5.76c3.39 0 6.2 2.8 6.2 6.2a6.2 6.2 0 0 1-12.4 0 6.2 6.2 0 0 1 6.2-6.2zm0 2.22a3.99 3.99 0 0 0-3.97 3.97A3.99 3.99 0 0 0 12 15.92a3.99 3.99 0 0 0 3.97-3.97A3.99 3.99 0 0 0 12 7.98zm6.44-3.77a1.4 1.4 0 1 1 0 2.8 1.4 1.4 0 0 1 0-2.8z"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:egraybillphoto@gmail.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#49613f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                </div>
+                <div><h4>egraybillphoto@gmail.com</h4></div>
+            </div>
+        </div>
+        <div class="about">
+            <h1>About Me</h1>
+            <p>
+                Hi, I'm Erik, a nature and travel photographer based in Lancaster, PA. Most of my work comes from hiking, exploring new places, and spending time outdoors. 
+                My love for travel grew from years of trips with my family and, more recently, adventures with my wife, which continue to inspire the way I see the world.
+                I'm an Eagle Scout, so I've spent much of my time hiking, camping, and experiencing the outdoors.
+            </p>
+            <p>
+                My background shapes the way I shoot: patient, observant, and always paying attention to the small details. 
+                It also explains why I'll happily stop mid-trail to photograph a bird I've already seen a hundred times.
+            
+                Alongside my nature and travel work, I'm expanding into portraits and events, including weddings, engagements, and band gigs. 
+                I enjoy capturing real connection and the joyful moments people share with one another.
+            </p>
+            <p>
+                My goal as a photographer is simple: to capture a joyful moment, evoke inspirational feelings, and to be a little thought-proviking with each photo.
+                You can explore samples of my photography in my portfolio. If you'd like to purchase a print or book me for an event, please feel free to reach out. 
+                I'd love to help create something meaningful for you!
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+
+    </div>
+</body>
+</html>

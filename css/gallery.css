@@ -1,0 +1,50 @@
+.gallery-info {
+    margin: 20px 0px;
+    font-size: 1.2em;
+}
+
+.gallery-info h1 {
+    margin-bottom: 5px;
+    color:#49613f;
+}
+
+.gallery {
+    text-align: center;
+    margin: 0px 200px;
+}
+
+.gallery img {
+    object-fit: cover;
+    transition: 200ms;
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    animation-name: HoverPhoto;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes HoverPhoto {
+    50% {opacity: 45%;}
+    100% {opacity: 100%;}
+}
+
+@media screen and (max-width: 700px) {
+    .gallery-info {
+        margin: 0px 10px;
+    }
+
+    .gallery {
+        margin: unset;
+    }
+
+    .gallery img {
+        width: 14em;
+        height: 14em;
+    }
+}

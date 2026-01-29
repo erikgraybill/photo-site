@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-erg-primary-accent-green: #49613f;  /*Cal Poly Green - Buttons, highlights, key headings*/
+    --color-erg-background-light: #faf7f0;      /*Floral White   - Page background, hero section base*/
+    --color-erg-background-dark: #121212;       /*Dark BG        - Page background, hero section base for dark mode */
+    --color-erg-second-accent-tan: #d8cbbb;     /*Dun            - Hover states, subtle dividers*/
+    --color-erg-text-gray: #3a3a3a;             /*Jet            - Body text, footer, icons*/
+    --color-erg-text-dm: #c3c3c3;               /*Light Text     - Body text, footer, icons for dark mode (Inverted Jet)*/
+    --color-erg-highlight-sage: #b7c9a5;        /*Sage           - Links, badges, skill bubbles*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    color: var(--color-erg-text-dm);
+    background-color: var(--color-erg-background-dark);
+    text-align: center;
+}
+
+.header {
+    margin: 10px 50px;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    display: flex;
+    color: var(--color-erg-text-dm);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 400ms ease;
+}
+
+nav a:hover, a.active-link {
+    color: var(--color-erg-highlight-sage);
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+.hamburger {
+    stroke: var(--color-erg-text-dm);
+}
+
+#open-sidebar-button {
+    display: none;
+    background: none;
+    border: none;
+    padding: 1em;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+#close-sidebar-button {
+    display: none;
+    background: none;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+}
+
+#overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    inset: 0;
+    z-index: 9;
+    display: none;
+}
+
+.image-and-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    margin-top: 10px;
+}
+
+h1 {
+    margin-bottom: 5px;
+    color: var(--color-erg-primary-accent-green);
+}
+
+/*@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+h1 {  
+  /* This section calls the slideInFromLeft animation we defined above 
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+  
+  background: #333;
+  padding: 30px;
+}*/
+
+@media screen and (max-width: 700px) {
+    #open-sidebar-button, #close-sidebar-button {
+        display: block;
+    }
+    
+    .header {
+        margin: unset;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100dvh;
+        width: min(15em, 100%);
+        z-index: 10;
+        background-color: var(--color-erg-background-dark);
+        transition: right 300ms ease-out;
+    }
+
+    nav.show {
+        right: 0;
+    }
+
+    nav.show ~ #overlay {
+        display: block;
+    }
+    
+    nav ul {
+        font-size: 1.5em;
+        gap: 40px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    nav a {
+        width: 100%;
+        padding-left: 2.5em;
+    }
+
+    nav a.active-link {
+        border-bottom: none;
+    }
+
+    nav .li-home {
+        margin-right: unset;
+    }
+}
