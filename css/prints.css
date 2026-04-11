@@ -1,0 +1,15 @@
+.prints-info {
+    margin: 20px 18vw;
+    font-size: 1.2em;
+}
+
+.prints-info h1 {
+    margin-bottom: 5px;
+    color:#49613f;
+}
+
+@media screen and (max-width: 1000px) {
+    .prints-info {
+        margin: 0px 20px;
+    }
+}

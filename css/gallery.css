@@ -36,7 +36,7 @@
 
 @media screen and (max-width: 1000px) {
     .gallery-info {
-        margin: 0px 10px;
+        margin: 0px 20px;
     }
 
     .gallery {
@@ -46,5 +46,12 @@
     .gallery img {
         width: 11em;
         height: 11em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .gallery img {
+        width: 9em;
+        height: 9em;
     }
 }
