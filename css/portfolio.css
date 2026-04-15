@@ -46,7 +46,7 @@
     100% {opacity: 100%;}
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
     .portfolio-info {
         margin: 0px 20px;
     }
@@ -57,7 +57,7 @@
 
     .portfolio-item img {
         width: 100%;
-        max-width: 18em;
+        max-width: 20em;
         height: auto;
     }
 
