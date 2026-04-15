@@ -17,8 +17,9 @@
     object-fit: cover;
     transition: 200ms;
     padding: 10px;
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
     border-radius: 15px;
 }
 
@@ -34,7 +35,7 @@
     100% {opacity: 100%;}
 }
 
-@media screen and (max-width: 1000px) {
+/*@media screen and (max-width: 1000px) {
     .gallery-info {
         margin: 0px 20px;
     }
@@ -44,14 +45,24 @@
     }
 
     .gallery img {
-        width: 11em;
-        height: 11em;
+        width: 100%;
+        max-width: 11em;
+        height: auto;
     }
-}
+}*/
 
 @media screen and (max-width: 400px) {
+    .gallery-info {
+        margin: 0px 20px;
+    }
+
+    .gallery {
+        margin: unset;
+    }
+
     .gallery img {
-        width: 9em;
-        height: 9em;
+        width: 100%;
+        max-width: 9em;
+        height: auto;
     }
 }

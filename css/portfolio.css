@@ -16,8 +16,9 @@
     object-fit: cover;
     transition: 200ms;
     padding: 10px;
-    width: 600px;
-    height: 300px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
     border-radius: 15px;
 }
 
@@ -45,7 +46,7 @@
     100% {opacity: 100%;}
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 400px) {
     .portfolio-info {
         margin: 0px 20px;
     }
@@ -55,8 +56,9 @@
     }
 
     .portfolio-item img {
-        width: 24em;
-        height: 12em;
+        width: 100%;
+        max-width: 18em;
+        height: auto;
     }
 
     .portfolio-text {

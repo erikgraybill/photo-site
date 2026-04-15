@@ -93,14 +93,14 @@ h1 {
 }
 
 .footer {
-    margin: 20dvh 0px;
+    margin-top: 20dvh;
     font-size: 1.2em;
 }
 
 .footer iframe {
     margin-top: 10px;
     border-radius: 30px;
-    background-color: var(--color-erg-highlight-sage);
+    
 }
 
 @media screen and (max-width: 700px) {
@@ -157,7 +157,7 @@ h1 {
     }
 
     .footer iframe {
-        width: 400px;
+        width: 90dvw;
         height: 1500px;
     }
 }
