@@ -1,54 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="css/prints.css" rel="stylesheet" />
-    <script src="sidebar.js" defer></script>
-    <title>Available Prints - Erik Graybill</title>
-</head>
-<body>
-    <div class="header">
-        <img style="width: 150px; height: 100%" src="images/EG-Logo-Full-DM.svg">
-        <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar">
-            <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="3" y1="12" x2="21" y2="12"></line>
-                <line x1="3" y1="6" x2="21" y2="6"></line>
-                <line x1="3" y1="18" x2="21" y2="18"></line>
-            </svg>
-        </button>
-        <nav id="navbar">
-            <ul>
-                <li>
-                    <button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">
-                        <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="18" y1="6" x2="6" y2="18"></line>
-                            <line x1="6" y1="6" x2="18" y2="18"></line>
-                        </svg>
-                    </button>
-                </li>
-                <li><a href="index.html">Portfolio</a></li>
-                <li><a href="prints.html" class="active-link" aria-current="page">Prints</a></li>
-                <!--<li><a href="">Services</a></li>-->
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-        <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
-    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link href="css/style.css" rel="stylesheet" />
+        <link href="css/prints.css" rel="stylesheet" />
+        <script src="js/sidebar.js" defer></script>
+        <title>Available Prints - Erik Graybill</title>
+    </head>
+    <body>
+        <div class="header">
+            <a href="index.html"><img style="width: 150px; height: 100%" src="images/EG-Logo-Full-DM.svg"></a>
+            <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar">
+                <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <nav id="navbar">
+                <ul>
+                    <li>
+                        <button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">
+                            <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </button>
+                    </li>
+                    <li><a href="index.html">Portfolio</a></li>
+                    <li><a href="prints.html" class="active-link" aria-current="page">Prints</a></li>
+                    <!--<li><a href="">Services</a></li>-->
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+        </div>
 
-    <div class="prints-info">
-        <h1>Prints</h1>
-        <p>The following photos are all available as prints. Please select any you are interested in to find their name, and submit an order at the bottom of the page if you are interested! When selected, each photo will have a name and a list of recommended print sizes.</p>
-    </div>
+        <div class="prints-info">
+            <h1>Prints</h1>
+            <p>The following photos are all available as prints. Please select any you are interested in to find their name, and submit an order at the bottom of the page if you are interested! When selected, each photo will have a name and a list of recommended print sizes.</p>
+        </div>
 
-    
+        
 
-    <div class="footer">
-        <h1>Let's Talk</h1>
-        <p>Reach out to me if you want to book a shoot, or would like to purchase a print!</p>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdWRz0KQr2rGdxGwMC-e0Zw2nCGZ_KhJNyhb9ZxYAVv0PNFsw/viewform?embedded=true" width="700" height="1500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-    </div>
-</body>
+        <div class="footer">
+            <h1>Let's Talk</h1>
+            <p>Reach out to me if you want to book a shoot, or would like to purchase a print!</p>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdWRz0KQr2rGdxGwMC-e0Zw2nCGZ_KhJNyhb9ZxYAVv0PNFsw/viewform?embedded=true" width="700" height="1500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+    </body>
 </html>

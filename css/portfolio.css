@@ -41,6 +41,18 @@
     pointer-events: none;
 }
 
+.reveal-blur {
+  opacity: 0;
+  filter: blur(8px);
+  transition: opacity 0.8s ease, filter 0.8s ease;
+}
+
+.reveal-blur.visible {
+  opacity: 1;
+  filter: blur(0);
+  transition-delay: var(--delay, 0s);
+}
+
 @keyframes HoverPhoto {
     50% {opacity: 45%;}
     100% {opacity: 100%;}
