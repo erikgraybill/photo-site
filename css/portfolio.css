@@ -22,7 +22,7 @@
     border-radius: 15px;
 }
 
-.portfolio-item img:hover {
+.portfolio-item img.test:hover {
     
     animation-name: HoverPhoto;
     animation-duration: 4s;

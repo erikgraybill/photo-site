@@ -23,7 +23,7 @@
     border-radius: 15px;
 }
 
-.gallery img:hover {
+.gallery img.test:hover {
     
     animation-name: HoverPhoto;
     animation-duration: 4s;
